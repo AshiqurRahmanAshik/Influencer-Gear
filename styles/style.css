@@ -153,6 +153,7 @@ footer {
   color: white;
   text-align: center;
   background-color: rgb(17, 11, 54);
+  width: 100vw !important;
 }
 .footer_title {
   padding-top: 1rem;
@@ -221,6 +222,9 @@ footer {
 
 /* Medium devices */
 @media only screen and (min-width: 576px) and (max-width: 992px) {
+  footer {
+    width: 100vw !important;
+  }
   .collection_card {
     margin: 0 auto;
     padding: 1rem;
