@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: poppins;
 }
 
 /* Common Style Start */
@@ -9,6 +10,10 @@ header,
 main {
   max-width: 1110px;
   margin: 0 auto;
+}
+:root {
+  --primary-color: #e02c6d;
+  --secondary-color: #6c757d;
 }
 
 /* Common Style End */
@@ -47,10 +52,51 @@ nav > ul:first-child {
 }
 /* Navbar Section End */
 
+/* Hero Section Start  */
+.hero_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero_text_heading {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.hero_text_info {
+  font-weight: semi-bold;
+}
+.hero_text_button {
+  display: inline-block;
+  width: 10rem;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  position: relative;
+}
+.hero_text_button i {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+}
+.hero_image {
+  background-image: url(../assests/images/Circle\ design.svg);
+}
+/* Hero Section End */
+
 /* Header Section End */
 
 /* Small devices */
 @media only screen and (max-width: 576px) {
+  .hero_container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .hero_text_heading {
+    font-size: 2rem;
+  }
   nav {
     padding: 0 1rem;
   }
@@ -62,6 +108,12 @@ nav > ul:first-child {
   }
   nav > ul:first-child {
     display: block;
+  }
+  .hero_text_button {
+    margin-bottom: 3rem;
+  }
+  .hero_image img{
+     width: 100%;
   }
 }
 
