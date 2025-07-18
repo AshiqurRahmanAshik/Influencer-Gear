@@ -98,9 +98,51 @@ nav > ul:first-child {
 }
 /* Brand Section End */
 /* Header Section End */
+/* Collection Section Start */
+.collection_title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem 0;
+}
+.collection_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
 
+.collection_card {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+.collection_card_details {
+  padding: 1rem;
+}
+.collection_card img {
+  display: inline-block;
+  width: 90%;
+  height: auto;
+  display: flex;
+  margin: 0rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.collection_name {
+  font-size: 2rem;
+}
+.collection_price {
+  font-size: 1.2rem;
+}
+.collection_review_icon i {
+  color: rgb(249, 187, 63);
+}
+/* Collection Section End */
 /* Small devices */
 @media only screen and (max-width: 576px) {
+  .collection_cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
   .hero_container {
     flex-direction: column;
     padding: 1rem;
@@ -109,6 +151,7 @@ nav > ul:first-child {
     font-size: 2rem;
   }
   nav {
+    margin-top: 1rem;
     padding: 0 1rem;
   }
   .nav_menu li:nth-child(n) {
@@ -128,8 +171,19 @@ nav > ul:first-child {
   }
 }
 
-/* Medium devices ( */
+/* Medium devices */
 @media only screen and (min-width: 576px) and (max-width: 992px) {
+  .collection_card {
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  .collection_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 80%;
+    margin: 0 auto;
+  }
   nav,
   .hero_container {
     padding: 0 1rem;
