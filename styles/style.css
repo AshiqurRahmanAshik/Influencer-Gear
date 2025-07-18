@@ -4,3 +4,74 @@
   box-sizing: border-box;
 }
 
+/* Common Style Start */
+header,
+main {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+/* Common Style End */
+
+/* Header Section Start */
+
+/* Navbar Section Start */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+}
+.nav_text {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.nav_menu ul {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.nav_menu a {
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.nav_menu li:last-child {
+  display: none;
+}
+nav ul li {
+  list-style: none;
+}
+nav > ul:first-child {
+  display: none;
+}
+/* Navbar Section End */
+
+/* Header Section End */
+
+/* Small devices */
+@media only screen and (max-width: 576px) {
+  nav {
+    padding: 0 1rem;
+  }
+  .nav_menu li:nth-child(n) {
+    display: none;
+  }
+  .nav_menu li:last-child {
+    display: block;
+  }
+  nav > ul:first-child {
+    display: block;
+  }
+}
+
+/* Medium devices ( */
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  nav {
+    padding: 0 1rem;
+  }
+}
+
+/* Large devices  */
+@media only screen and (min-width: 992px) {
+}
