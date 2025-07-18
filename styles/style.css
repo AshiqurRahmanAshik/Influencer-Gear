@@ -85,7 +85,18 @@ nav > ul:first-child {
   background-image: url(../assests/images/Circle\ design.svg);
 }
 /* Hero Section End */
+/* Brand Section Start */
 
+.brand {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  margin: 6rem 0;
+  padding: 0 3rem;
+}
+/* Brand Section End */
 /* Header Section End */
 
 /* Small devices */
@@ -112,15 +123,21 @@ nav > ul:first-child {
   .hero_text_button {
     margin-bottom: 3rem;
   }
-  .hero_image img{
-     width: 100%;
+  .hero_image img {
+    width: 100%;
   }
 }
 
 /* Medium devices ( */
 @media only screen and (min-width: 576px) and (max-width: 992px) {
-  nav {
+  nav,
+  .hero_container {
     padding: 0 1rem;
+  }
+  .brand {
+    width: 100%;
+    margin: 2rem auto;
+    justify-content: center;
   }
 }
 
