@@ -171,6 +171,9 @@ footer {
     padding: 0 1rem;
     text-align: center;
   }
+  .feature_products img {
+    width: 80%;
+  }
   .feature_products_text {
     text-align: center;
     text-align: justify;
@@ -218,23 +221,22 @@ footer {
   .hero_image img {
     width: 100%;
   }
+  footer {
+    width: auto;
+  }
 }
 
 /* Medium devices */
-@media only screen and (min-width: 576px) and (max-width: 992px) {
-  footer {
-    width: 100vw !important;
-  }
+@media only screen and (min-width: 577px) and (max-width: 990px) {
   .collection_card {
     margin: 0 auto;
     padding: 1rem;
+    min-width: 20rem;
   }
   .collection_cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    width: 80%;
-    margin: 0 auto;
   }
   nav,
   .hero_container {
@@ -245,15 +247,21 @@ footer {
     margin: 2rem auto;
     justify-content: center;
   }
+
   .feature_products {
-    padding: 0 1rem;
-    text-align: justify;
+    flex-direction: column;
   }
+  .feature_products_image img {
+    width: 100%;
+    height: auto;
+  }
+  .feature_products_text {
+    text-align: center;
+    text-align: justify;
+    text-align: center;
+  }
+
   .feature_text_button {
     text-align: center;
   }
-}
-
-/* Large devices  */
-@media only screen and (min-width: 992px) {
 }
